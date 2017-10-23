@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML sucks</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/font/font.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="javaScript.js"></script>
+	<link rel="icon"       type="image/png" href="images/icon.gif"/>
+</head>
+
+<body>
+	<div id="header">
+		<div id="header_contents">
+			<h1>Third Year ( Level 6 )</h1>
+			<img id="wslogo" src="images/Kcl-logo.svg.png" alt="Kings College Logo">
+		</div>
+	</div>
+
+	<div id="main_container">
+		<div id ="tickbox">
+			<input type="checkbox" id= "With_Management" name="With_Management" value="With_Management" onclick="setVisible()"> 
+			<p class="tickbox_text">Tick the box if you are doing <span class="course_management_title">BSc Computer Science with Management</span></p>
+		</div>
+
+		<div id="table1" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<p class="labelling" ondrop="dontAllowDrop(event)"> Please Select Modules: </p>
+			<ul class ="CSWithoutManage">
+					<li class ="moduleitem CSWithoutManage sem1" id="6CCS3AMS" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)" >6CCS3AMS - Agents and Multi-Agent Systems 
+					<div hidden id="6CCS3AMSInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  	
+						<p class="sub_info" >80% written examination, 20% coursework </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p> 
+						<p class= "sub_info_label">Lecturers:</p>  <p class="sub_info" >Dr Elizabeth Black, Professor Michael Luck </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >This module provides a critical introduction to theories and methods regarding multi-agent computer systems and their component agents, focussing particularly on mechanisms for coordination and agreement between self-interested agents.</p>
+						<hr>
+					</div> 
+				</li>
+
+				<li class ="moduleitem CSWithoutManage sem1" id="6CCS3CFL" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)" >6CCS3CFL - Compiler and Formal Languages
+					<div class="contInfo" hidden id="6CCS3CFLInfo">
+						<hr>
+						<p class="sub_info_label sub_info_padding_B" >Assessment:</p>  
+						<p class="sub_info" >80% written examination, 20% coursework </p>  
+						<p class= "sub_info_label " > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label">Semester:</p> <p class="sub_info" > 1 </p>
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" >Dr Christian Urban</p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >To explain the techniques behind compilers, lexers and parsers. To introduce the mathematical formalisms ofregular expressions, context-free grammars, and to showtheir applications to computer languages. To illustrate low level machine languages and compiler techniques.</p>
+						<hr>
+					</div> 
+				</li>
+
+				<li class ="moduleitem CSWithoutManage sem1" id="6CCS3COV" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3COV - Computer Vision 
+					<div hidden id="6CCS3COVInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" >65% written examination, 35% coursework </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p>
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" >Dr Michael Spratling </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						enable computers to understand visual information in a similar way to humans. This module aims to provide a comprehensive introduction to the subject, covering the basic concepts, methodologies and tools of image analysis and interpretation.</p>
+						<hr>
+					</div>
+				</li>
+
+				<li class ="moduleitem CSWithoutManage sem1" id="6CCS3CSL" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3CSL - Computer Science Logic 
+					<div hidden id="6CCS3CSLInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > 100% written examination </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p>
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" >Dr Hana Chockle </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info">This module intends to show the importance of formal, logical modelling in the development of hardware and software systems. The module introduces variouslogical formalisms and shows how they can be used as specification, design andvertification tools in Computer Science and IT. </p>
+						<hr>
+					</div> 
+
+				</li>
+					<li class ="moduleitem CSWithoutManage sem1" id="6CCS3HCI" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3HCI - Human-Computer Interaction
+					<div hidden id="6CCS3HCIInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" >85% written examination, 15% coursework </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p> 
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" >Dr Rita Borgo </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						This module covers advanced topics and techniques for understanding user needs and requirements; designing systems; and evaluating their usability.</p>
+						<hr>
+					</div> 
+				</li>
+
+				<li class ="moduleitem CSWithoutManage sem1" id="6CCS3VER" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3VER - Formal Verification
+					<div hidden id="6CCS3VERInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" >75% written examination, 25% coursework </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p>
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" >Dr Hana Chockler, Professor Luca Vigano and Dr Daniele Magazzeni </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						This module covers the state-of-the art in Model Checking and Formal Verification, looking at formal models to represent systems, protocols, etc., and different formal techniques and tools for security verification and  model checking.</p>
+						<hr>
+					</div> 
+				</li>
+
+				<li class ="moduleitem CSWithoutManage sem1" id="6CCS3WSN" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3WSN - Algorithms for the World Wide Web and Social Networks
+					<div hidden id="6CCS3WSNInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > 100% written examination</p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p>
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" >Professor Colin Cooper</p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						This module aims to provide students with a general introduction to algorithms for large online networks with a main focus on the www and social networks.</p>
+						<hr>
+					</div>
+				</li>
+
+
+				<li class ="moduleitem CSWithoutManage sem1" id="6CCS3SMT" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3SMT - Software Measurement and Testing
+					<div hidden id="6CCS3SMTInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > 100% written examination </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p>
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" >Dr Hanna Chockler and Dr Jose Such </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						This module covers basic elements of software design, development, and testing cycle.</p>
+						<hr>
+					</div> 
+				</li>
+
+				<li class ="moduleitem CSWithoutManage sem1" id="6CCS3GRS" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3GRS - Computer Graphics Systems
+					<div hidden id="6CCS3GRSInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > 100% written examination </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p>
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" >Dr Richard Overill </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						To introduce you to the computational, mathematical and physical principles underlying computer graphics systems.</p>
+						<hr>
+					</div>
+				</li>
+
+
+				<li class ="moduleitem CSWithoutManage sem1" id="6CCS3PAL" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3PAL - Parallel Algorithms
+					<div hidden id="6CCS3PALInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > 100% written examination </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p>
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" >  Professor Colin Cooper</p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						To introduce classical results on parallel algorithmic design and to illustrate how they may be cleanly, concisely and efficiently expressed using the nested data-parallel paradigm.</p>
+						<hr>
+					</div> 
+				</li>
+
+				<li class ="moduleitem CSWithoutManage sem1" id="6CCS3AIN" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3AIN - Artificial Intelligence
+					<div hidden id="6CCS3AINInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" >80% written examination, 20% coursework </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p>
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" > Professor Simon Parsons and Dr Elizabeth Black </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						To provide a grounding in artificial intelligence techniques used: to represent knowledge about theworld; to make decisions on the basis of that information; and to update what is known about the world.</p>
+						<hr>
+					</div>
+				</li>
+
+				<li class ="moduleitem CSWithoutManage sem1" id="6CCS3CIS" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3CIS - Cryptography and Information Security
+					<div hidden id="6CCS3CISInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > 100% written examination </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p> 
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" > Professor Luca Vigano</p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						To introduce both theoretical and practical aspects of cryptography, authentication and information security.</p>
+						<hr>
+						</div> 
+				</li>
+
+				<li class ="moduleitem CSWithoutManage sem1" id="6CCS3AIP" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3AIP - Artificial Intelligence Planning
+					<div hidden id="6CCS3AIPInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" >75% written examination, 25% coursework </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p>
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" > Dr Amanda Coles and Dr Daniele Magazzeni </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						This module covers the state-of-the-art in Artificial Intelligence planning, looking at the theoretical details behind planning; the implementation of planning techniques; and how planning can be used effectively in application.</p>
+						<hr>
+					</div>
+				</li>
+
+				<li class ="moduleitem CSWithoutManage sem2" id="6CCS3DSM" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3DSM - Distributed Systems
+					<div hidden id="6CCS3DSMInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > 100% written examination </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 2 </p> 
+						<p class= "sub_info_label">Lecturers:</p>  <p class="sub_info" > Dr Simon Miles </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						This module provides provide an overall understanding of the basic concepts and practical technology of distributed computing. It also cover an in-depth understanding of the considerations applied in designing software for distributed systems.</p>
+						<hr>
+					</div> 
+				</li>
+				<li class ="moduleitem CSWithoutManage sem2" id="6CCS3SAD" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3SAD - Software Architecture and Design
+					<div hidden id="6CCS3SADInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > 100% written examination </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 2 </p>
+						<p class= "sub_info_label">Lecturers:</p>  <p class="sub_info" > Dr Hamza Hamza </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						To explore the practice of software architecting as applied to the development of enterprise software systems. To learn about software architecture, architecture patterns, frameworks, design patterns, pattern languages, layers of change, the architecting process and the practical process of software design and implementation.</p>
+						<hr>
+					</div> 
+				</li>
+				<li class ="moduleitem CSWithoutManage sem2  " id="6CCS3NSE" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3NSE - Network Security
+					<div hidden id="6CCS3NSEInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > 100% written examination </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 2 </p> 
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" > Professor Luca Vigano and Dr Jose Such </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						Successful completion of this course will provide students with a detailed understanding of how different types of attacks on computer systems and networks are carried out and also how such attacks can be reliably prevented or detected.</p>
+						<hr>
+					</div> 
+				</li>
+				<li class ="moduleitem CSWithoutManage sem2 " id="6CCS3PRE" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3PRE - Pattern Recognition
+					<div hidden id="6CCS3PREInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" >65% written examination, 35% coursework </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 2 </p>
+						<p class= "sub_info_label">Lecturers:</p>  <p class="sub_info" > Dr Michael Spratling, Dr Hak-Keung Lam </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						To introduce both statistical and neural network theory and approaches for solving pattern recognition problems.</p>
+						<hr>
+					</div> 
+				</li>
+			
+			
+				<li class ="moduleitem CSWithoutManage sem2" id="6CCS3COM" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3COM - Computational Models
+					<div hidden id="6CCS3COMInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > 100% written examination </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 2 </p>
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" > Professor Maribel Fernandez </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						The aim of this module is to describe formal languages and the main abstract models of computation, precisely and in enough detail to distinguish their essential aspects clearly.</p>
+						<hr>
+					</div>
+				</li>
+				<li class ="moduleitem CSWithoutManage sem2" id="6CCS3SIA" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3SIA - Software Engineering of Internet Applications
+					<div hidden id="6CCS3SIAInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" >80% written examination, 20% coursework </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 2 </p> 
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" > Professor Stefan Edelkamp </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						This module will cover different approaches for building internet applications and the choice of design techniques and technologies involved from a software engineering perspective, considering issues of efficiency, modularity and maintainability.</p>
+						<hr>
+					</div>
+				<li class ="moduleitem CSWithoutManage sem2" id="6CCS3OME" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3OME - Optimisation Methods
+					<div hidden id="6CCS3OMEInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > 100% written examination </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 2 </p>  
+						<p class= "sub_info_label">Lecturers:</p>  <p class="sub_info" > Dr Kathleen Steinhoefel </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						o introduce various discrete optimisation problems, efficient algorithms for solving these problems, and general algorithmic techniques which can be applied to a wide range of optimisation problems. </p>
+						<hr>
+					</div>
+				</li>
+				<li class ="moduleitem CSWithoutManage sem2" id="6CCS3TSP" ondrop="dontAllowDrop(event)" draggable="true" ondragstart="drag(event,this.id)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3TSP - Text Searching and Processing
+					<div hidden id="6CCS3TSPInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > 100% written examination </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" >15 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 2 </p> 
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" > Professor Costas Iliopoulos and Dr Solon Pissis </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						This unit is devoted to algorithms processing strings and texts efficiently. These types of algorithms are used for software design in the domains of operating systems utilities, search engines on the Internet, data retrieval systems, analysis of genetic sequences, and natural language processing, for example.</p>
+						<hr>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div id="table2" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<p class="labelling " ondrop="dontAllowDrop(event)"> Mandatory Modules: </p>
+			<ul ondrop="dontAllowDrop(event)">
+				<li class ="moduleitem CSWithoutManage dark" id="6CCS3PRJ" ondrop="dontAllowDrop(event)" draggable="false" ondragstart="drag(event)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6CCS3PRJ - Individual Project 
+					<div hidden id="6CCS3PRJInfo">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" >80% written examination, 20% coursework </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" > 30 </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 & 2 </p>
+						<p class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" > Dr Natalia Criado-Pacheco </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						The project provides you with an opportunity to engage in a self-managed and detailed investigation of an aspect of computer science. A substantial piece of written work will be produced and a significant piece of software.</p>
+						<hr>
+					</div>
+				</li>
+
+				<li hidden class ="moduleitem CSWithManage  " id="6SSMN339" ondrop="dontAllowDrop(event)" draggable="false" ondragstart="drag(event)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6SSMN339 - Human Resource Management 
+					<div ondrop="dontAllowDrop(event)" hidden id="6SSMN339Info">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > No info </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" > No info </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 2 </p> 
+						<p ondrop="dontAllowDrop(event)" class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" > No info</p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						this module is run by the King's Business School, please consult the King's Business School handbook for further information</p>
+						<hr>
+					</div>
+				</li>
+				<li hidden class ="moduleitem CSWithManage dark" id="6SSMN325" ondrop="dontAllowDrop(event)" draggable="false" ondragstart="drag(event)" onmousedown="getInfo(this.id)" onmouseup="hideInfo(this.id)">6SSMN325 - Business Strategy
+					<div ondrop="dontAllowDrop(event)" hidden id="6SSMN325Info">
+						<hr>
+						<p class="sub_info_label" >Assessment:</p>  
+						<p class="sub_info" > No info </p>  
+						<p class= "sub_info_label" > Credit value:</p> <p class="sub_info" > No info </p>
+						<p class= "sub_info_label ">Semester:</p> <p class="sub_info" > 1 </p> 
+						<p ondrop="dontAllowDrop(event)" class= "sub_info_label">Lecturers:</p>  
+						<p class="sub_info" > No info </p>
+						<p class="sub_info_label">Description: </p> 
+						<p class="sub_info" >
+						This module provides a critical introduction to theories and methods regarding multi-agent computer systems and their component agents, focussing particularly on mechanisms for coordination and agreement between self-interested agents.</p>
+						<hr>
+					</div>
+				</li>
+			</ul>
+
+				<p class="labelling " ondrop="dontAllowDrop(event)"> Optional modules: </p> 
+			</ul>
+		</div>
+
+	</div>
+	<div id="footer">
+			<p>Website created by &#38; copyrighted by 
+				<a href="http://www.google.com">Rewaz Esmaeel</a>,
+				<a href="https://www.linkedin.com/in/daniel-mannix-683832137/">Daniel Mannix</a>, 
+				<a href="http://www.google.com">Stevan Warren</a>, 
+				<a href="https://uk.linkedin.com/in/raihan-sharif-0b83685b/">Raihan Sharif</a>, 
+				<a href="http://www.google.com">Jeongho Suh</a>, students of King College London</p>
+	</div>
+</body>
+</html>
